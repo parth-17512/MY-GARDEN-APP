@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950472488661",
+    "project_id": "my-garden-4a739",
+    "storage_bucket": "my-garden-4a739.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950472488661:android:c1e9081850bc14c1fb145c",
+        "android_client_info": {
+          "package_name": "com.example.my_garden_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkAtF93CiI-YDXv3zxoTrKz8bjbxBDcEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
