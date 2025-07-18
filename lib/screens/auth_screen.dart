@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:my_garden_app/services/auth_service.dart';
+import 'package:go_router/go_router.dart';
 
 // Add this AuthScreen widget class to your auth_screen.dart file
 class AuthScreen extends StatefulWidget {
@@ -41,11 +42,13 @@ class _AuthScreenState extends State<AuthScreen> {
           _emailController.text.trim(),
           _passwordController.text,
         );
+        context.go('/home');
       } else {
         await _authService.signUp(
           _emailController.text.trim(),
           _passwordController.text,
         );
+        context.go('/home');
       }
     } catch (e) {
       setState(() {

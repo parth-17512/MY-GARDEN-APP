@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
 import '../providers/plant_provider.dart';
 import '../widgets/plant_card.dart';
-import 'add_plant_screen.dart';
+// import 'add_plant_screen.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -82,9 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(
-            context,
-          ).push(MaterialPageRoute(builder: (context) => AddPlantScreen()));
+          context.go('/add-plant');
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.green,

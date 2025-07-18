@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../providers/auth_provider.dart';
 import '../providers/plant_provider.dart';
 import '../models/plant_model.dart';
+import 'package:go_router/go_router.dart';
 
 class AddPlantScreen extends StatefulWidget {
   @override
@@ -61,7 +62,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         );
 
         await plantProvider.addPlant(plant);
-        Navigator.of(context).pop();
+        context.pop();
 
         ScaffoldMessenger.of(
           context,
